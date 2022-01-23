@@ -75,7 +75,7 @@ img{
 #subText{
   text-align: center;
   color:var(--gb);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 #subText:hover{
   text-decoration: underline;
