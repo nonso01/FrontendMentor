@@ -1,5 +1,7 @@
 # Frontend Mentor - QR code component
 
+> you can check at images you will see the screenshots!
+>thanks to FrontendMentor 🥰🥰🥰🚀
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
