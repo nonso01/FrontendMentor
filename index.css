@@ -105,6 +105,7 @@
  }
  
  cite{
+  font-family: cursive;
    color:var(--w);
    font-style: normal;
  }
