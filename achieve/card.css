@@ -1,0 +1,97 @@
+/*well am a beginner! and am not that to new to css! just that i learn at my pace! and i haven't touched positioning,grid,and flex, but float is of no better use*/
+
+/*so the highest i can do is to center*/
+:root{
+--w:hsla(0,0%,100%,1);/*white*/
+--lg:hsla(212,45%,89%,0.6);/*light gray*/
+--gb:hsla(220,15%,55%,1);/*grayish blue*/
+--db:hsla(218,44%,22%,1)/*dark blue*/
+}
+*{
+  margin: 0;
+  padding:0;
+  outline: none;
+}
+html{
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--w);
+  font-family: 'Outfit',sans-serif;
+}
+@font-face{
+  font-family:'Outfit',sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+}
+/*main content*/
+#mainContent{
+  display:grid;
+  justify-content: center;
+  height: 650px;
+  margin: 50px 30px 30px 50px;
+  border-radius:15px;
+  box-shadow: 4px 10px 15px rgba(0,0,0,0.1); 
+  background-color: var(--lg);
+}
+section{
+  display: grid;
+  justify-content: center;
+ 
+}
+#mainDiv{
+  width:280px;
+  height: 65%;
+  margin:auto;
+  border-radius:15px;
+  box-shadow: 4px 4px 20px rgba(0,0,0,0.1);
+  background-color: var(--w);
+}
+/*end of centering 🤫🤫*/
+
+/*div containing img*/
+.image{
+  display: grid;
+  justify-content: center;
+}
+/*image styles*/
+img{
+  width:240px;
+ margin:10px 0px 10px 0px;
+ border-radius:calc(19px - 10px);
+}
+
+
+/*typography*/
+.text{
+  font-family: 'Outfit',sans-serif;
+}
+#mainText{
+  text-align: center;
+  line-height: 1.3rem;
+  font-weight: 700;
+  color:var(--db);
+  margin:10px 0px 10px 0px;
+}
+#subText{
+  text-align: center;
+  color:var(--gb);
+  font-size: 0.9rem;
+}
+#subText:hover{
+  text-decoration: underline;
+  color:var(--db);
+}
+
+.attribution p{
+  color:var(--db);
+  text-align: center;
+  
+}
+p a{
+  color:var(--gb);
+  text-decoration-line:none;
+}
+p a:hover{
+  color:var(--db);
+  text-decoration: underline;
+}
