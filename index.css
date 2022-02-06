@@ -97,6 +97,9 @@ button{
  font-weight: 700;
  transition: all 150ms ease-in-out;
 }
+@media (max-width:1440px){
+  button{width:29vw;}
+}
 .proceed{
   border-radius:10px;
   background-color: var(--bb);
