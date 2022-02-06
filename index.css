@@ -80,7 +80,7 @@ h1{
 .intro{
   text-align: center;
   line-height:1.5em;
-  margin-inline: 10px;
+  margin-inline: 20px;
   margin-bottom: 10px;
   color:var(--dsb);
 }/*end intros*/
@@ -140,6 +140,9 @@ button{
   button{
     width: 80vw;
     height: 40px;
+  }
+  .intro{
+  margin-inline:10px;
   }
 }/*end media*/
 /*active state*/
