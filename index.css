@@ -1,0 +1,158 @@
+*{
+box-sizing: border-box;
+margin:0;
+padding: 0;
+outline: none;
+}
+:root{
+  /*primary*/
+  --pb:hsla(255,100%,94%,1);
+  --bb:hsla(245,75%,52%,1);
+  /*neutral*/
+  --vpb:hsla(255,100%,98%,0.8);
+  --dsb:hsla(224,23%,55%,1);
+  --db:hsla(223,47%,23%,1);
+}
+@font-face{
+font-family: 'Red Hat Display';
+  src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+}
+body{
+  height:100vh;
+  width:100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background:var(--vpb) url("/images/pattern-background-desktop.svg") no-repeat padding-box;
+  font-family: 'Red Hat Display',sans-serif;
+}
+main{
+  border-radius:15px;
+  box-shadow: 5px 9px 15px hsla(224,23%,55%,0.4);
+  height:640px;
+  width:400px;
+  margin:0px auto;
+  background-color: white;
+}
+/*div containing hero img*/
+div:not(.buttons){
+  height:32%;
+  width:100%;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  background: var(--vpb) url("/images/illustration-hero.svg")no-repeat border-box border-box center/cover;
+}
+/*icon section*/
+section{
+  border-radius:10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-inline: 20px;
+  height: 80px;
+  padding: 15px;
+  background-color: var(--vpb);
+}
+section p{
+  line-height: 20px;
+  color:var(--dsb);
+}
+a{
+ padding:10px;
+ font-weight: 700;
+ cursor: none;
+}
+i{
+  color:var(--db);
+  font-weight: 700;
+  font-style: normal;
+}
+img{
+  height:50px;
+  width:50px;
+}/*end icon section*/
+/*intros*/
+h1{
+  text-align: center;
+  margin: 1.3em auto;
+  font-weight: 900;
+  color:var(--db);
+}
+.intro{
+  text-align: center;
+  line-height:1.5em;
+  margin-inline: 10px;
+  margin-bottom: 10px;
+  color:var(--dsb);
+}/*end intros*/
+/*button styles*/
+.buttons{
+  margin:15px auto;
+  display: grid;
+  justify-content: center;
+}
+button{
+ width:33vw;
+ height:50px;
+ border:none;
+ font-weight: 700;
+ transition: all 150ms ease-in-out;
+}
+.proceed{
+  border-radius:10px;
+  background-color: var(--bb);
+  color: white;
+  box-shadow: 3px 5px 10px hsla(255,100%,64%,0.4);
+}
+.cancel{
+  padding-bottom: 10px;
+  background-color: transparent;
+  color:var(--dsb);
+}
+/*end button style*/
+ .attribution{
+    color:var(--dsb);
+    text-align: center;
+  }
+  .attribution a{
+    color:var(--db);
+  }
+  /*media queries*/
+@media (max-width:375px){
+  html{
+    height:100vh;
+  }
+  body{
+    background: var(--vpb) url("/images//images/pattern-background-mobile.svg") no-repeat padding-box border-box top right/50px 50px;
+   height:100vh;
+  }
+  main{
+   height:600px;
+   width:320px;
+   margin: auto;
+  }
+  h1{
+    margin:0.7em;
+  }
+  section{
+  padding:0;
+    padding-top:1ch;
+  }
+  button{
+    width: 80vw;
+    height: 40px;
+  }
+}/*end media*/
+/*active state*/
+section a:hover{
+  color:var(--dsb);
+  text-decoration-line:none;
+  opacity: 0.89;
+  transition: all 150ms ease-in-out;
+}
+.cancel:hover{
+ color:var(--db);
+  transition: all 150ms ease-in-out;}
+  .proceed:hover{
+  opacity: 0.6;
+  transition: all 150ms ease-out;
+}
