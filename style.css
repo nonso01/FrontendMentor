@@ -119,7 +119,7 @@ body{
 .secondContent{
 /* border: 2px solid;*/
  display: flex;
- flex-flow: row nowrap;
+ flex-flow: row wrap;
  justify-content: space-around;
 }
 .second-1{
